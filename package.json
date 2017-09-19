@@ -1,0 +1,20 @@
+{
+	"name": "header-modification-on-client-for-an-asset",
+	"version": "1.0.0",
+	"description":
+		"Proof of concept of how to add a header to a request for an asset",
+	"main": "index.js",
+	"dependencies": {
+		"concurrently": "^3.5.0",
+		"cors": "^2.8.4",
+		"express": "^4.15.4"
+	},
+	"scripts": {
+		"start":
+			"concurrently --kill-others \"npm run server\" \"npm run image-server\"",
+		"server": "node index",
+		"image-server": "node image-server"
+	},
+	"author": "Clint Goodman",
+	"license": "ISC"
+}
